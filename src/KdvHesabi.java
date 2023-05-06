@@ -18,5 +18,6 @@ public class KdvHesabi {
         System.out.println("Uygulanan KDV Oranı: " + kdvOrani);
         System.out.println("KDV Değeri: " + kdv + " TL");
         System.out.println("KDV'li Toplam Fiyat: " + toplam + " TL");
+        
     }
 }
