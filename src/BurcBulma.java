@@ -15,8 +15,13 @@ public class BurcBulma {
 
         //Ay ve Gün Kontrolü
         validation = (ay >= 1 && ay <= 12) &&
-                (ay == 2  && gun <= 29) &&
-                (ay != 4 && ay != 7 && ay != 9 && ay != 11 || gun <= 30);
+                    (gun >= 1 && gun <= 31) &&
+                    (ay != 2 || gun <= 29) &&
+                    (ay != 4 || gun <= 30) &&
+                    (ay != 6 || gun <= 30) &&
+                    (ay != 9 || gun <= 30) &&
+                    (ay != 1 || gun <= 30);
+
 
         if (validation) {
             //Koç Burcu : 21 Mart - 20 Nisan
@@ -54,8 +59,7 @@ public class BurcBulma {
 
             //Balık Burcu : 20 Şubat - 20 Mart
             if ((ay == 2 && gun >= 20) || (ay == 3 && gun <= 20)) System.out.println("Balık Burcusunuz...");
-        }
-        else {
+        } else {
             System.out.println("Geçersiz Bir Tarih Girdiniz...");
         }
     }
