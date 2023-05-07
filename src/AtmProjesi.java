@@ -48,7 +48,9 @@ public class AtmProjesi {
                         case 3:
                             System.out.println("Hesabınızda " + balance +" TL Vardır" );
                             break;
-
+                        case 4:
+                            System.out.println("Çıkış Yapılıyor .....");
+                            break;
                         default:
                             System.out.println("Geçersiz Seçim" );
                     }
