@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class HavaSicakliğiEtkinligi {
+public class HavaSicakligiEtkinligi {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 
