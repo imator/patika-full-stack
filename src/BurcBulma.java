@@ -14,8 +14,8 @@ public class BurcBulma {
         gun = inp.nextInt();
 
         //Ay ve Gün Kontrolü
-        validation = ay >= 1 && ay <= 12 &&
-                (ay == 2 ? gun % 4 == 0 ? gun <= 29 : gun <= 28 : gun <= 31) &&
+        validation = (ay >= 1 && ay <= 12) &&
+                (ay == 2  && gun <= 29) &&
                 (ay != 4 && ay != 7 && ay != 9 && ay != 11 || gun <= 30);
 
         if (validation) {
